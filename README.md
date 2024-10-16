@@ -1,1 +1,5 @@
--- maak een inleiden de tekst waarom je start met een hello world programma
+### Cursus
+
+Dit zijn de cursusbestanden van PHP-MySQL webapplicatie
+
+[Cursus](https://maken.wikiwijs.nl/209164/PHP_MySQL_webapplicatie)
