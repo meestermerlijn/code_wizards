@@ -1,0 +1,1 @@
+-- maak een inleiden de tekst waarom je start met een hello world programma
