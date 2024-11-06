@@ -3,7 +3,7 @@ view("parts/header", ['title' => 'Alle posts']);
 view("parts/navigatie-menu");
 ?>
     <div class="sm:mx-10">
-        <h1 class="text-3xl my-4">Home</h1>
+        <h1 class="text-3xl my-4">Posts</h1>
         <?php
         foreach ($posts as $post) {
             ?>
