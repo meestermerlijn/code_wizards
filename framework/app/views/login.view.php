@@ -51,7 +51,7 @@ view("parts/navigatie-menu");
                 Gratis Tailwind components template van
                 <a href="https://tailwindui.com/" class="font-medium text-indigo-600 hover:text-gray-500" target="_blank">TailwindUI</a><br>
 
-                <!-- verwijder onderstaande regels -->
+            <!-- verwijder onderstaande regels -->
             <p class="text-red-600 mt-4">Om de login te laten werken is een database nodig met een tabel 'users' met
                 velden
                 'name', 'email', 'password', 'role', 'deleted_at'.</p>

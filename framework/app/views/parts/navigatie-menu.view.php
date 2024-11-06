@@ -7,7 +7,6 @@
             </a>
             <a href="/" class="<?= isUri("") ? 'underline ' : '' ?>text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Home</a>
             <a href="/about" class="<?= isUri("about") ? 'underline ' : '' ?>text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">About</a>
-            <a href="/contact" class="<?= isUri("contact") ? 'underline ' : '' ?>text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Contact</a>
         </div>
         <div class="justify-end">
             <?php if (auth()): ?>
