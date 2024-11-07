@@ -13,6 +13,10 @@ view("parts/navigatie-menu");
             <div class="border border-1 rounded p-4 bg-gray-50">
                 <h2 class="font-bold"><?= $post['title']; ?></h2>
                 <?= $post['content'] ?>
+                <form method="post" action="/posts-destroy/<?= $post['id'] ?>">
+                    <input type="submit" value="Verwijder" name="delete"
+                           class="border bg-red-600 text-white rounded-md px-2 py-1 hover:bg-red-300 cursor-pointer">
+                </form>
             </div>
         <?php endforeach; ?>
     </div>
