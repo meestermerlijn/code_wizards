@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/opdracht_J8/app/controllers/posts-edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_J8/app/router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-edit.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-update.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-edit.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_L/app/controllers/posts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_L/app/router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_L/app/views/posts.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp.php" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +23,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php83" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2oW3yBLBeFnW7VDqhDvJy8n1eFj" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mmerl/Documents/code_wizards/opdracht_J8/app",
+    "last_opened_file_path": "K:/php_projects/code_wizards/opdracht_L/app/controllers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,11 +47,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\php_projects\code_wizards\opdracht_L\app\controllers" />
+      <recent name="K:\php_projects\code_wizards\opdracht_L\app\views" />
+      <recent name="K:\php_projects\code_wizards\opdracht_L" />
       <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_J8\app" />
       <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_X_dev\app\controllers" />
-      <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_J8\app\views" />
-      <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_J7\app\controllers" />
-      <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_J7\app" />
     </key>
   </component>
   <component name="SharedIndexes">
