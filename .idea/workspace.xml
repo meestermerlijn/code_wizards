@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/opdracht_J7/app/controllers/posts-destroy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-destroy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_J8/app/views/posts.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/mmerl/Documents/code_wizards/opdracht_J7/app/controllers",
+    "last_opened_file_path": "C:/Users/mmerl/Documents/code_wizards/opdracht_J8/app/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -46,6 +44,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_J8\app\views" />
       <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_J7\app\controllers" />
       <recent name="C:\Users\mmerl\Documents\code_wizards\opdracht_J7\app" />
     </key>
@@ -66,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730971756670</updated>
-      <workItem from="1730971757768" duration="956000" />
+      <workItem from="1730971757768" duration="1582000" />
     </task>
     <servers />
   </component>
