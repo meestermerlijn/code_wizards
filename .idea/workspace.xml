@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/opdracht_J7/app/views/posts.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_I/app/views/posts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_I/app/views/posts.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_J/app/views/posts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_J/app/views/posts.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730971756670</updated>
-      <workItem from="1730971757768" duration="159000" />
+      <workItem from="1730971757768" duration="250000" />
     </task>
     <servers />
   </component>
