@@ -5,11 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/opdracht_L/app/controllers/posts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_L/app/router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_L/app/views/posts.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_F/code_wizards_dump_v01.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_L/app/controllers/posts-store.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tmp.php" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-destroy.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-destroy.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-show.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-update.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/views/items-create.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/views/items-create.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/views/items-edit.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/views/items-edit.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/views/items-index.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/views/items.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/views/items-show.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/views/items-show.view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +31,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php83" />
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;meestermerlijn&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:meestermerlijn/code_wizards.git&quot;,
+    &quot;accountId&quot;: &quot;a1e8d879-2c2c-4339-ad43-558d6dea2fdc&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="K:\php-8.2.15ts\php.exe" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -34,6 +55,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "K:/php_projects/code_wizards/opdracht_L/app/controllers",
@@ -57,8 +79,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PS-241.15989.102" />
-        <option value="bundled-php-predefined-ba97393d7c68-c76157a7178b-com.jetbrains.php.sharedIndexes-PS-241.15989.102" />
+        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
+        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
       </set>
     </attachedChunks>
   </component>
@@ -71,6 +93,8 @@
       <option name="presentableId" value="Default" />
       <updated>1730971756670</updated>
       <workItem from="1730971757768" duration="3505000" />
+      <workItem from="1731312233897" duration="32000" />
+      <workItem from="1733145649113" duration="1268000" />
     </task>
     <servers />
   </component>

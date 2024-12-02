@@ -9,25 +9,16 @@ view("parts/navigatie-menu");
         <!-- loop door alle items heen -->
         <?php foreach ($items as $item) : ?>
             <li><?= $item['id'] ?> -
-                <?= htmlspecialchars($item['naam']) ?> -
-                <?= htmlspecialchars($item['beschrijving']) ?> -
+                <?= $item['naam'] ?> -
+                <?= $item['beschrijving'] ?> -
                 <?= $item['prijs'] ?> -
                 Link naar item:
                 <a href="/items/<?= $item['id'] ?>" class="text-indigo-600">
                     <?= $item['naam'] ?>
                 </a>
-                <?php
-                view('parts/delete-button', [
-                    'action' => "/items/{$item['id']}",
-                    'titel' => 'Delete',
-                    'content' => 'Are you sure?',
-                    'class' => 'inline-block'
-                ]);
-                ?>
             </li>
         <?php endforeach; ?>
     </ul>
-
 
 <?php
 view("parts/footer");

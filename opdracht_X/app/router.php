@@ -13,12 +13,12 @@ $route->get('logout', "controllers/logout.php");
 
 
 $route->get('items/{id}', 'controllers/items-show.php');
-$route->get('items', 'controllers/items-index.php');
-$route->get('items/create', 'controllers/items-create.php');
-$route->post('items', 'controllers/items-store.php');
-$route->get('items/{id}/edit', 'controllers/items-edit.php');
-$route->put('items/{id}', 'controllers/items-update.php');
-$route->delete('items/{id}', 'controllers/items-destroy.php');
+$route->get('items', 'controllers/items.php');
+$route->get('items-create', 'controllers/items-create.php');
+$route->post('items-store', 'controllers/items-store.php');
+$route->get('items-edit/{id}', 'controllers/items-edit.php');
+$route->post('items-update/{id}', 'controllers/items-update.php');
+$route->post('items-destroy/{id}', 'controllers/items-destroy.php');
 //Alleen als je ingelogd bent
 if (auth()) {
     //hier komen routes die je alleen kan bereiken als je ingelogd bent
