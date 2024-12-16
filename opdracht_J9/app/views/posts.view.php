@@ -14,7 +14,7 @@ view("parts/navigatie-menu");
                 <h2 class="font-bold"><?= $post['title']; ?></h2>
                 <?= $post['content'] ?>
 
-                <div class="flex justify-between">
+                <div class="flex justify-between mt-4">
                     <form method="get" action="/posts-edit/<?= $post['id'] ?>">
                         <input type="submit" value="Wijzig"
                                class="border border-1 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">

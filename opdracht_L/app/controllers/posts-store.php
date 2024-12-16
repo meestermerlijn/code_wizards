@@ -13,14 +13,18 @@ $db = new Database();
 $db->query("INSERT INTO posts (title, content, user_id) VALUES (:title, :content, :user_id)", [
     'title' => $request->title,
     'content' => $request->content,
-    'user_id' =>user()->id,
+    'user_id' => user()->id,
 ]);
 
 //flash message
-flash('De post '.$request->title.' is succesvol toegevoegd');
+flash('De post ' . $request->title . ' is succesvol toegevoegd');
 
 //hier kan je alleen komen als de query goed is uitgevoerd
 
 // doorsturen naar posts pagina (de post is ingevoerd dus gebruiker doorsturen naar andere pagina_
 redirect("/posts");
 
+if (auth()) { //alleen als je ingelogd bent kan je dit doen
+    $route->get('api/users-search', "controllers/api/users-search.php");
+    $route->get('users', "views/users-search.view.php");
+}

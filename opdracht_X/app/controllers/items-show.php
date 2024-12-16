@@ -9,5 +9,7 @@ $db = new Database();
 
 //view met item teruggegeven
 view('items-show', [
-    'item' => $db->query("SELECT * FROM items WHERE id = ?", [$request->id])->fetch()
+    'item' => $db->query("SELECT * FROM items WHERE id = :id", [
+        "id" => $request->id
+    ])->fetch()
 ]);

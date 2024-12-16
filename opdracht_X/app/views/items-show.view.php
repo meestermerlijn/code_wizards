@@ -12,4 +12,7 @@ view("parts/navigatie-menu");
     </p>
 
 <?php
+view('parts/delete-button', ['action' => "/items-destroy/".$item['id']]);
+?>
+<?php
 view("parts/footer");

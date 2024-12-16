@@ -36,7 +36,7 @@ function specialchars(mixed $var): array|string
 {
     if (is_array($var)) {
         foreach ($var as $key => $value) {
-            $var[$key] = specialchars($value);
+            $var[$key] = specialchars($value??"");
         }
         return $var;
     }
@@ -114,7 +114,7 @@ function auth(): bool
 // te gebruiken: user()->email
 function user(): ?object
 {
-    return $_SESSION['user']
+    return ($_SESSION['user']??null)
         ? (object)$_SESSION['user']
         : null;
 }

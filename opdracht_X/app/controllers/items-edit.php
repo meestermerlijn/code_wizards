@@ -6,5 +6,7 @@ $request->validate([
 $db = new Database();
 
 view('items-edit', [
-    'item' => $db->query("SELECT * FROM items WHERE id=?", [$request->id])->fetch()
+    'item' => $db->query("SELECT * FROM items WHERE id=:id", [
+        "id"=>$request->id
+    ])->fetch()
 ]);

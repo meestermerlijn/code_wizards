@@ -15,6 +15,18 @@ view("parts/navigatie-menu");
             <div class="border border-1 rounded p-4 bg-gray-50">
                 <h2 class="font-bold"><?= $post['title']; ?></h2>
                 <?= $post['content'] ?>
+
+                <div class="flex justify-between">
+                    <form method="get" action="/posts-edit/<?= $post['id'] ?>">
+                        <input type="submit" value="Wijzig"
+                               class="border border-1 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
+                    </form>
+
+                    <form method="post" action="/posts-destroy/<?= $post['id'] ?>">
+                        <input type="submit" value="Verwijder" name="delete"
+                               class="border bg-red-600 text-white rounded-md px-2 py-1 hover:bg-red-300 cursor-pointer">
+                    </form>
+                </div>
             </div>
         <?php } ?>
     </div>

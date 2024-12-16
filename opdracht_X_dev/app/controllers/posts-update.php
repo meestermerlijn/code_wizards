@@ -3,7 +3,7 @@
 $request->validate([
     'id' => 'required',
     'title' => 'required',
-    'content' => 'required'
+    'content' => 'required|min:5'
 ]);
 
 //database object aanmaken

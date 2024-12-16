@@ -8,7 +8,7 @@ $request->validate([
 
 //indien validatie oké dan gegevens opslaan in de database
 $db = new Database();
-$db->query("INSERT INTO items (naam,beschrijving,prijs) VALUES (:naam,:beschrijving,:prijs)", [
+$db->query("INSERT INTO items (naam, beschrijving, prijs) VALUES (:naam, :beschrijving, :prijs)", [
     'naam' => $request->naam,
     'beschrijving' => $request->beschrijving,
     'prijs' => $request->prijs,
