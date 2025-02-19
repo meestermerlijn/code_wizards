@@ -94,7 +94,10 @@ class Request
     private function integer(mixed $data, string $option = ''): bool
     {
         $this->validation_msg = 'Dit veld moet een getal zijn';
-        return is_int($data);
+        if(!is_numeric($data)){
+            return false;
+        }
+        return is_int($data+0);
     }
 
     private function length(string $data, string $option = ''): bool

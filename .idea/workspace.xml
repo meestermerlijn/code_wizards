@@ -5,73 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/opdracht_X/src/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/profielfoto-store.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/profielfoto.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/config.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/controllers/afspraak-create.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/controllers/afspraak-store.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/controllers/home.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/controllers/login.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/controllers/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/router.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/about.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/afspraak-create.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/home.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/login.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/parts/delete-button.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/parts/footer.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/parts/header.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/views/parts/navigatie-menu.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/Database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/Model.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/Request.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/Route.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/csrf.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/functions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/401.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/403.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/404.view.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/tailwind.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/SQL_cheat_sheet.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/cheatSheet.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/images/anonymous.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/alpine.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/axios.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/tailwind.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/styles/default.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/app/views/about.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/views/about.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/app/views/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/views/login.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_F/relatie diagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_F/relatie diagram.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_J8/app/controllers/posts-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_J9/app/controllers/posts-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_J8/app/controllers/posts-update.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_J9/app/controllers/posts-update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_J8/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_J9/app/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_J8/app/views/posts-edit.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_J9/app/views/posts-edit.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_J8/app/views/posts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_J9/app/views/posts.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_L/app/controllers/posts-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_L/app/controllers/posts-store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_L/app/views/posts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_L/app/views/posts.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/app/views/items-show.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/views/items-show.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/src/Model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/src/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/src/Route.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/src/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-update.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-edit.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-edit.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,8 +72,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-e768b9ed790e-JavaScript-PS-243.21565.202" />
-        <option value="bundled-php-predefined-a98d8de5180a-5fbe0c30323e-com.jetbrains.php.sharedIndexes-PS-243.21565.202" />
+        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PS-243.24978.50" />
+        <option value="bundled-php-predefined-a98d8de5180a-fbeb0b58ac0f-com.jetbrains.php.sharedIndexes-PS-243.24978.50" />
       </set>
     </attachedChunks>
   </component>
@@ -154,7 +90,9 @@
       <workItem from="1733145649113" duration="4344000" />
       <workItem from="1733300999768" duration="18700000" />
       <workItem from="1733732897393" duration="13000" />
-      <workItem from="1734355475979" duration="211000" />
+      <workItem from="1734355475979" duration="2205000" />
+      <workItem from="1734509097807" duration="99000" />
+      <workItem from="1739954428366" duration="419000" />
     </task>
     <servers />
   </component>
