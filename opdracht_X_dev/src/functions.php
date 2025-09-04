@@ -155,3 +155,11 @@ function abort(int $code=404, string $msg="Pagina niet gevonden"): void
     view($code, ['error' => $msg]);
     die();
 }
+
+function request(): Request
+{
+    if(!isset($request)){
+        $request = new Request();
+    }
+    return $request;
+}

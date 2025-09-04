@@ -5,9 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/opdracht_E/e2_1.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_E/e2_1_uitwerking.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_E/e2_2.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_E/e2_2_uitwerking.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/app/views/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/views/login.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/views/401.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/views/401.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/views/403.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/views/403.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/views/404.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/views/404.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/webroot/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/webroot/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/webroot/scripts/alpine.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/framework/webroot/scripts/alpine.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/webroot/scripts/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/framework/webroot/scripts/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/webroot/scripts/tailwind.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/framework/webroot/scripts/tailwind.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_D/tailwindcss.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_D/tailwindcss.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_E/if-else.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_E/if-else.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/src/views/401.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/src/views/401.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/src/views/403.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/src/views/403.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/src/views/404.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/src/views/404.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-create.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-create.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/views/401.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/views/401.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/views/403.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/views/403.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/views/404.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/views/404.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/webroot/scripts/alpine.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/webroot/scripts/alpine.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/webroot/scripts/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/webroot/scripts/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/webroot/scripts/tailwind.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/webroot/scripts/tailwind.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/401.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/401.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/403.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/403.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/404.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/src/views/404.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/alpine.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/alpine.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/tailwind.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/webroot/scripts/tailwind.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp.php" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,29 +74,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;K:/php_projects/code_wizards/framework/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "K:/php_projects/code_wizards/opdracht_E",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\php_projects\code_wizards\opdracht_E" />
+      <recent name="K:\php_projects\code_wizards\opdracht_Z_proeftoets\webroot\scripts" />
+      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\webroot\scripts" />
       <recent name="K:\php_projects\code_wizards\framework\src" />
       <recent name="K:\php_projects\code_wizards\opdracht_X\src" />
-      <recent name="K:\php_projects\code_wizards\opdracht_Z_proeftoets" />
-      <recent name="K:\php_projects\code_wizards\opdracht_X" />
-      <recent name="K:\php_projects\code_wizards\opdracht_J8\app\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="K:\php_projects\code_wizards" />
@@ -72,8 +107,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-PS-243.24978.50" />
-        <option value="bundled-php-predefined-a98d8de5180a-fbeb0b58ac0f-com.jetbrains.php.sharedIndexes-PS-243.24978.50" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PS-251.28293.47" />
+        <option value="bundled-php-predefined-a98d8de5180a-e5747d4f5a45-com.jetbrains.php.sharedIndexes-PS-251.28293.47" />
       </set>
     </attachedChunks>
   </component>
@@ -92,7 +127,9 @@
       <workItem from="1733732897393" duration="13000" />
       <workItem from="1734355475979" duration="2205000" />
       <workItem from="1734509097807" duration="99000" />
-      <workItem from="1739954428366" duration="419000" />
+      <workItem from="1739954428366" duration="1674000" />
+      <workItem from="1744637008953" duration="1736000" />
+      <workItem from="1756972161531" duration="5574000" />
     </task>
     <servers />
   </component>

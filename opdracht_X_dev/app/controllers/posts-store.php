@@ -1,6 +1,6 @@
 <?php
 // validatie van de form
-$request->validate([
+request()->validate([
     'title' => 'required',
     'content' => 'required'
 ]);

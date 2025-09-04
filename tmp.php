@@ -1,4 +1,7 @@
-<a href="posts-show/67">Show post 67</a>
-<?php
 
-hasRole('admin')
+
+<?php if(true): ?>
+    <p>Dit is waar</p>
+<?php else: ?>
+    <p>Dit is onwaar</p>
+<?php endif; ?>

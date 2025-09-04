@@ -152,3 +152,10 @@ function getNonce(): string
     }
     return $_SESSION['nonce'];
 }
+function request(): Request
+{
+    if(!isset($request)){
+        $request = new Request();
+    }
+    return $request;
+}
