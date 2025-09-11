@@ -28,7 +28,7 @@ class Request
             }
             foreach ($ruleSet as $rule) {
                 if (!$this->validateRule($key, $rule)) {
-                    $this->errors[$key] = $messages[$key][$rule] ?? $this->validation_msg;
+                    $this->errors[$key] = $messages[$key.'.'.(explode(':', $rule)[0]??'')] ?? $this->validation_msg;
                 }
             }
         }
