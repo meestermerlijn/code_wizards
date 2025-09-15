@@ -376,6 +376,21 @@ copy("bestand.txt", "nieuwbestand.txt");
 //bestand uploaden
 move_uploaded_file($_FILES['bestand']['tmp_name'], "bestand.txt");
 
+
+///////////////////////////////////////
+/// Views /////////////////////////////
+///////////////////////////////////////
+
+//view laden
+view('posts', [
+    'posts' => $db->query("SELECT * FROM posts ORDER BY id DESC")->fetchAll(),
+]);
+
+//view laden met onveilige variabelen (niet aanbevolen)
+view('home', [], [
+    'onveilig_script' => '<script>alert("hacked")</script>',
+]);
+
 ////////////////////////////////////////
 /// Classes ////////////////////////////
 ////////////////////////////////////////
@@ -458,17 +473,17 @@ $request->validate([
 ]);
 
 //handmatig een error toevoegen
-$request->errors['veldnaam'] = "Dit veld is verplicht";
+$request->setError('naam',"Naam is verplicht");
 
-/*  SQL query voorbeelden
--- Voorbeeld van een query met AND en OR
+/*  SQL-query voorbeelden
+- Voorbeeld van een query met AND en OR
 SELECT *
 FROM leerlingen
 WHERE plaats = 'utrecht'
 AND (achternaam LIKE '%p%'
 OR voornaam LIKE '%p%');
 
--- Voorbeeld van een query met meerdere tabellen
+- Voorbeeld van een query met meerdere tabellen
 SELECT *
 FROM auteurs, boeken
 WHERE auteurs.auteurnr = boeken.auteurnr

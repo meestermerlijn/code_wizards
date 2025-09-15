@@ -44,6 +44,10 @@ class Request
             redirect($_SERVER['HTTP_REFERER']);
         }
     }
+    public function setError(string $veld, string $error): void
+    {
+        $this->errors[$veld] = $error;
+    }
 
     public function append($key, $value): void
     {
