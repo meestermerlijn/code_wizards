@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/Request.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/framework/webroot/cheatSheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/webroot/cheatSheet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/app/views/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/views/login.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/webroot/scripts/alpine.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/webroot/scripts/alpine.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/webroot/scripts/axios.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/webroot/scripts/axios.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/webroot/scripts/tailwind.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/webroot/scripts/tailwind.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tmp.php" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +54,7 @@
     "RunOnceActivity.laravel-idea.search-composer-json": "true",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "K:/php_projects/code_wizards/opdracht_G/app",
+    "last_opened_file_path": "K:/php_projects/code_wizards/opdracht_X/webroot/scripts",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,11 +72,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\php_projects\code_wizards\opdracht_X\webroot\scripts" />
+      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\webroot\scripts" />
       <recent name="K:\php_projects\code_wizards\opdracht_G\app" />
       <recent name="K:\php_projects\code_wizards\opdracht_E" />
       <recent name="K:\php_projects\code_wizards\opdracht_Z_proeftoets\webroot\scripts" />
-      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\webroot\scripts" />
-      <recent name="K:\php_projects\code_wizards\framework\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="K:\php_projects\code_wizards" />
@@ -110,7 +114,8 @@
       <workItem from="1757576366415" duration="8689000" />
       <workItem from="1757656946098" duration="1477000" />
       <workItem from="1757916312996" duration="68000" />
-      <workItem from="1757964740502" duration="1993000" />
+      <workItem from="1757964740502" duration="2548000" />
+      <workItem from="1758181954165" duration="937000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,7 @@ view("parts/navigatie-menu");
     <div class="sm:mx-10">
         <h1 class="text-3xl my-4">Posts</h1>
         <form action="/posts" method="get">
-            <input type="text" id="search" name="q" class="rounded-md">
+            <input type="text" id="search" name="q" class="border border-1 rounded-md px-2 py-1">
             <input type="submit" value="Zoek"
                    class="border border-1 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
         </form>
