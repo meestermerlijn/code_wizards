@@ -1,4 +1,5 @@
 <?php
+
 #[AllowDynamicProperties]
 class Model
 {
@@ -26,6 +27,21 @@ class Model
         } else {
             echo "id=$id not found";
             die();
+        }
+        return $this;
+    }
+
+    public function first(): self
+    {
+        $this->limit(1);
+        $results = $this->get();
+        if (!empty($results)) {
+            $this->original = $results[0];
+            foreach ($this->original as $k => $v) {
+                $this->$k = $v;
+            }
+        } else {
+            dd("No records found");
         }
         return $this;
     }
@@ -59,21 +75,56 @@ class Model
     //nieuw object aanmaken (en opslaan in de database)
     public function create($array): self
     {
-        $placeholders = [];
-        $cols = [];
-        $values = [];
-        foreach ($array as $k => $v) {
-            $cols[] = "`" . $k . "`";
-            $values[] = $v;
-            $placeholders[] = " ?";
+        try {
+            $placeholders = [];
+            $cols = [];
+            $values = [];
+            foreach ($array as $k => $v) {
+                $cols[] = "`" . $k . "`";
+                $values[] = $v;
+                $placeholders[] = " ?";
+            }
+            if (!empty($cols)) {
+                $db = new Database();
+                $this->setQuery("INSERT INTO {$this->getTable()} (" . implode(",", $cols) . ") " .
+                    "VALUES (" . implode(",", $placeholders) . ")");
+                $db->query($this->query, $values);
+                $id = $db->lastInsertId();
+                $this->find($id);
+            }
+        } catch (Exception $e) {
+            if (config('app.env') == 'development') {
+                dd('Er is een fout opgetreden: ' . $e->getMessage());
+            } else {
+                dd('Er is een fout opgetreden, neem contact op met de systeembeheerder.');
+            }
         }
-        if (!empty($cols)) {
-            $db = new Database();
-            $this->setQuery("INSERT INTO {$this->getTable()} (" . implode(",", $cols) . ") " .
-                "VALUES (" . implode(",", $placeholders) . ")");
-            $db->query($this->query, $values);
-            $id = $db->lastInsertId();
-            $this->find($id);
+        return $this;
+    }
+
+    public function update($array): self
+    {
+        try {
+            $values = [];
+            $cols = [];
+            foreach ($array as $k => $v) {
+                $cols[] = "`" . $k . "`=?";
+                $values[] = $v;
+            }
+            $values[] = $this->original[$this->primaryKey];
+            if (!empty($cols)) {
+                $db = new Database();
+                $this->setQuery("UPDATE {$this->getTable()} SET (" . implode(",", $cols) . ") " .
+                    "WHERE `{$this->primaryKey}` = ?");
+                $db->query($this->query, $values);
+                $this->find($this->{$this->primaryKey});
+            }
+        } catch (Exception $e) {
+            if (config('app.env') == 'development') {
+                dd('Er is een fout opgetreden: ' . $e->getMessage());
+            } else {
+                dd('Er is een fout opgetreden, neem contact op met de systeembeheerder.');
+            }
         }
         return $this;
     }
@@ -137,11 +188,23 @@ class Model
     }
 
     //Werkelijk uitvoeren van de query
-    public function get(): array
+    public function get(bool $asObject = false): array|object
     {
         $this->buildQuery();
         $db = new Database();
-        return $db->query($this->query, $this->bind_params)->fetchAll();
+        if (!$asObject) {
+            return $db->query($this->query, $this->bind_params)->fetchAll();
+        } else {
+            $results = $db->query($this->query, $this->bind_params)->fetchAll();
+            foreach ($results as $result) {
+                $obj = new static();
+                foreach ($result as $k => $v) {
+                    $obj->$k = $v;
+                }
+                $obj->original = $result;
+            }
+            return $obj;
+        }
     }
 
     //in plaats van get() kan je deze gebruiken om de query te dumpen i.p.v. uitvoeren

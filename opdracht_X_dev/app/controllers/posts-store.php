@@ -1,6 +1,6 @@
 <?php
 // validatie van de form
-request()->validate([
+$request->validate([
     'title' => 'required',
     'content' => 'required'
 ]);
@@ -16,6 +16,8 @@ $db->query("INSERT INTO posts (title, content, user_id) VALUES (:title, :content
     'user_id' => 63, // bij ingelogde gebruiker ipv 63 de id van de ingelogde gebruiker: user()->id
 ]);
 
+//Opgave J4.1 - Toast message dat post is opgeslagen
+flash("Post is opgeslagen", true, 3000);
 
 //hier kan je alleen komen als de query goed is uitgevoerd
 

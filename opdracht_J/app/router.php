@@ -8,7 +8,7 @@ $route->get('index', "controllers/home.php");
 $route->get('about', "views/about.view.php");
 $route->get('contact', "views/contact.view.php");
 $route->get('posts','controllers/posts.php');
-$route->get('posts-show/{id}','controllers/posts-show.php');
+$route->get('posts-show/{id}','controllers/posts-show.php'); //opgave J2.1
 
 $route->get('login', "views/login.view.php");
 $route->post('login', "controllers/login.php");

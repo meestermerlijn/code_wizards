@@ -12,6 +12,7 @@ require __DIR__ . "/../src/Database.php";
 //Model classes
 require __DIR__ . "/../src/Model.php";
 require __DIR__ . "/../app/models/User.php";
+require __DIR__ . "/../app/models/Post.php";
 
 //request class
 require __DIR__ . "/../src/Request.php";

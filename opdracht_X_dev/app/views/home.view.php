@@ -13,4 +13,13 @@ view("parts/navigatie-menu");
     </div>
 
 <?php
+
+$user = (new User)->first();
+dd($user); //geeft de naam van de gebruiker die de post heeft gemaakt
+
+$user = (new User)->find(1);
+$user->update([
+    'name' => 'Nieuwe naam'
+]);
+
 view("parts/footer");

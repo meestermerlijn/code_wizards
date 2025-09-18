@@ -13,7 +13,7 @@ $db = new Database();
 $db->query("INSERT INTO posts (title, content, user_id) VALUES (:title, :content, :user_id)", [
     'title' => $request->title,
     'content' => $request->content,
-    'user_id' => user()->id,
+    'user_id' => user()->id, // user_id van de ingelogde gebruiker
 ]);
 
 //flash message

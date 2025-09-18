@@ -17,7 +17,9 @@ $db->query("INSERT INTO posts (title, content, user_id) VALUES (:title, :content
 ]);
 
 
-//hier kan je alleen komen als de query goed is uitgevoerd
+//Opgave J4.1 - Toast message dat post is opgeslagen
+flash("Post is opgeslagen", true, 3000);
+
 
 // doorsturen naar posts pagina (de post is ingevoerd dus gebruiker doorsturen naar andere pagina_
 redirect("/posts");

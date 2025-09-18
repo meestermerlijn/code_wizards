@@ -1,5 +1,5 @@
 <div x-data="{ modelConfirm: false }" class="<?= $class ?? '' ?>">
-    <button @click="modelConfirm =!modelConfirm" class="flex justify-center text-white text-md bg-red-500 hover:bg-red-600 border border-gray-200 focus:ring-4 focus:outline-none shadow-md focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center ">
+    <button @click="modelConfirm =!modelConfirm" class="cursor-pointer flex justify-center text-white bg-red-500 hover:bg-red-600 shadow-md font-medium rounded-md text-sm px-3 py-2 text-center inline-flex items-center ">
         <span> Verwijder </span>
     </button>
 
@@ -44,7 +44,7 @@
                         <?= method_delete(); ?>
                         <button for="show"
                                 type="submit"
-                                @click="modelConfirm = false" class="mr-2 px-2 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-500 hover:bg-red-600 rounded-md shadow-md">
+                                @click="modelConfirm = false" class="mr-2 px-2 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-500 hover:bg-red-600 rounded-md shadow-md cursor-pointer">
                             Verwijderen
                         </button>
                     </form>

@@ -4,6 +4,8 @@ view("parts/navigatie-menu");
 ?>
     <div class="sm:mx-10">
         <h1 class="text-3xl my-4">Posts</h1>
+
+        <!-- Loop door posts en toon ze van opgave I2.2 -->
         <?php foreach ($posts as $post): ?>
             <div class="border border-1 rounded p-4 bg-gray-50">
                 <h2 class="font-bold"><?= $post['title']; ?></h2>
