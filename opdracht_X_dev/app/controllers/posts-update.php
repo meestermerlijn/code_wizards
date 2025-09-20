@@ -6,18 +6,15 @@ $request->validate([
     'content' => 'required|min:5'
 ]);
 
-//database object aanmaken
-$db = new Database();
-
-//query om post te updaten
-$db->query("UPDATE posts SET title = :title, content = :content WHERE id = :id", [
-    'id' => $request->id,
+$post = (new Post)->find($request->id);
+$post->update([
     'title' => $request->title,
     'content' => $request->content
 ]);
+
 
 //succes bericht
 flash('Post is gewijzigd');
 
 //redirect naar posts
-redirect('posts');
+redirect('/posts');

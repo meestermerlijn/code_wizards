@@ -5,15 +5,10 @@ $request->validate([
     'content' => 'required'
 ]);
 
-// database object aanmaken
-$db = new Database();
-
-
-// invoeren van de gegevens in de database
-$db->query("INSERT INTO posts (title, content, user_id) VALUES (:title, :content, :user_id)", [
+$post = (new Post)->create([
     'title' => $request->title,
     'content' => $request->content,
-    'user_id' => 63, // bij ingelogde gebruiker ipv 63 de id van de ingelogde gebruiker: user()->id
+    'user_id' => user()->id
 ]);
 
 //Opgave J4.1 - Toast message dat post is opgeslagen

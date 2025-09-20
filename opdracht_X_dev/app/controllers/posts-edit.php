@@ -4,13 +4,8 @@ $request->validate([
     'id' => 'required'
 ]);
 
-// database object aanmaken
-$db = new Database();
-
-// query om post op te halen
-$post = $db->query("SELECT * FROM posts WHERE id = :id", [
-    'id' => $request->id
-])->fetch();
+// post ophalen
+$post = (new Post)->find($request->id);
 
 // als post niet bestaat
 if(!$post){

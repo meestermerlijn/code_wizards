@@ -32,8 +32,12 @@ function config(string $param): string
     }
     return $result;
 }
-function specialchars(mixed $var): array|string
+function specialchars(mixed $var): object|array|string
 {
+    if($var instanceof Model) {
+        return $var;
+    }
+
     if (is_array($var)) {
         foreach ($var as $key => $value) {
             $var[$key] = specialchars($value??"");

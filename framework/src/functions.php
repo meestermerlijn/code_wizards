@@ -32,16 +32,17 @@ function config(string $param): string
     }
     return $result;
 }
-function specialchars(mixed $var): array|string
+function specialchars(mixed $var): object|array|string
 {
+    if($var instanceof Model) {
+        return $var;
+    }
+
     if (is_array($var)) {
         foreach ($var as $key => $value) {
             $var[$key] = specialchars($value??"");
         }
         return $var;
-    }
-    if(is_null($var)){
-        return '';
     }
     return htmlspecialchars($var);
 }
@@ -122,6 +123,22 @@ function user(): ?object
         : null;
 }
 
+// faken van PUT, DELETE, PATCH method bij het versturen van een formulier
+function method_put(): string
+{
+    return "<input type=\"hidden\" name=\"_method\" value=\"PUT\">";
+}
+
+function method_delete(): string
+{
+    return "<input type=\"hidden\" name=\"_method\" value=\"DELETE\">";
+}
+
+function method_patch(): string
+{
+    return "<input type=\"hidden\" name=\"_method\" value=\"PATCH\">";
+}
+
 //Doorsturen naar een andere pagina
 function redirect($url, $statusCode = 303)
 {
@@ -143,15 +160,6 @@ function abort(int $code=404, string $msg="Pagina niet gevonden"): void
     die();
 }
 
-//wordt gebruikt voor Content Security Policy
-function getNonce(): string
-{
-    if (!isset($_SESSION['nonce'])) {
-        $bytes = random_bytes(20);
-        $_SESSION['nonce'] = bin2hex($bytes);
-    }
-    return $_SESSION['nonce'];
-}
 function request(): Request
 {
     if(!isset($request)){

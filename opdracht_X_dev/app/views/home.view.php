@@ -14,10 +14,12 @@ view("parts/navigatie-menu");
 
 <?php
 
-$user = (new User)->first();
-dd($user); //geeft de naam van de gebruiker die de post heeft gemaakt
+$user = (new User)->find(81);
+$post = (new Post)->first(1);
+dd($post->user());
+dd($user->posts()); //geeft de naam van de gebruiker die de post heeft gemaakt
 
-$user = (new User)->find(1);
+$user = (new User)->find(31);
 $user->update([
     'name' => 'Nieuwe naam'
 ]);

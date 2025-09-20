@@ -14,6 +14,9 @@ class Model
     protected $table = '';
     protected $primaryKey = 'id';
 
+    private array $relations = []; // nog niet gebruikt in deze versie
+    private array $orderBy = [];
+
     //ophalen van één object dmv de primaire sleutel
     public function find($id): self
     {
@@ -114,7 +117,7 @@ class Model
             $values[] = $this->original[$this->primaryKey];
             if (!empty($cols)) {
                 $db = new Database();
-                $this->setQuery("UPDATE {$this->getTable()} SET (" . implode(",", $cols) . ") " .
+                $this->setQuery("UPDATE {$this->getTable()} SET " . implode(",", $cols) . " " .
                     "WHERE `{$this->primaryKey}` = ?");
                 $db->query($this->query, $values);
                 $this->find($this->{$this->primaryKey});
@@ -187,15 +190,21 @@ class Model
         return $this;
     }
 
+    public function orderBy($col, $dir = 'ASC'): self
+    {
+        $this->orderBy[] = " {$col} {$dir} ";
+        return $this;
+    }
+
     //Werkelijk uitvoeren van de query
     public function get(bool $asObject = false): array|object
     {
         $this->buildQuery();
         $db = new Database();
+        $results = $db->query($this->query, $this->bind_params)->fetchAll();
         if (!$asObject) {
-            return $db->query($this->query, $this->bind_params)->fetchAll();
+            return $results;
         } else {
-            $results = $db->query($this->query, $this->bind_params)->fetchAll();
             foreach ($results as $result) {
                 $obj = new static();
                 foreach ($result as $k => $v) {
@@ -206,6 +215,7 @@ class Model
             return $obj;
         }
     }
+
 
     //in plaats van get() kan je deze gebruiken om de query te dumpen i.p.v. uitvoeren
     public function dumpQuery(): void
@@ -246,6 +256,7 @@ class Model
         }
         $this->setQuery("SELECT * FROM {$this->getTable()} " .
             (!empty($where) ? ' WHERE ' . implode(" AND ", $where) : '') .
+            (!empty($this->orderBy) ? ' ORDER BY '. implode(", ", $this->orderBy) : '') .
             $this->limit
         );
     }

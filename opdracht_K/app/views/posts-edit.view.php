@@ -6,11 +6,11 @@ view("parts/navigatie-menu");
         <h1 class="text-3xl my-4">Post wijzigen</h1>
         <form action="/posts-update/<?= $post['id']?>" method="post">
             <?= csrf() ?>
-            <input type="text" name="title" value="<?= old('title',$post['title']) ?>" placeholder="Titel" class="border-1 rounded-md py-1 px-2" required>
+            <input type="text" name="title" value="<?= old('title',$post['title']) ?>" placeholder="Titel" class="border-1 rounded-md py-1 px-2" required><br>
             <?php if (errors('title')): ?>
                 <p class="text-red-500 text-sm my-2"><?= errors('title') ?></p>
             <?php endif; ?>
-            <textarea name="content" value="<?= old('content',$post['content']) ?>" placeholder="Content..." class="border-1 rounded-md py-1 px-2"></textarea>
+            <textarea name="content" placeholder="Content..." class="border-1 rounded-md py-1 px-2 w-100 h-64"><?= old('content',$post['content']) ?></textarea><br>
             <?php if (errors('content')): ?>
                 <p class="text-red-500 text-sm my-2"><?= errors('content') ?></p>
             <?php endif; ?>
