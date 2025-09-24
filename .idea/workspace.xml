@@ -5,22 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/opdracht_M/app/controllers/posts-destroy.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_M/app/controllers/posts-show.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_M/app/controllers/posts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/opdracht_M/app/views/posts-show.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_K/app/views/posts-edit.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_K/app/views/posts-edit.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-show.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-show.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-store.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-update.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/home.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-edit.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-edit.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-show.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-show.view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/Model.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/Model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,37 +41,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.laravel-idea.search-composer-json": "true",
-    "git-widget-placeholder": "master",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "K:/php_projects/code_wizards/opdracht_X_dev/app/views",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;K:/php_projects/code_wizards/framework/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\app\views" />
+      <recent name="K:\php_projects\code_wizards\framework\src" />
       <recent name="K:\php_projects\code_wizards\opdracht_M\app\controllers" />
-      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\app\controllers" />
       <recent name="K:\php_projects\code_wizards\opdracht_M\app\views" />
-      <recent name="K:\php_projects\code_wizards\framework\app\models" />
+      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\app\views" />
+      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\app\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="K:\php_projects\code_wizards\opdracht_M\app" />
@@ -126,7 +112,9 @@
       <workItem from="1757916312996" duration="68000" />
       <workItem from="1757964740502" duration="2548000" />
       <workItem from="1758181954165" duration="24604000" />
-      <workItem from="1758392728976" duration="6048000" />
+      <workItem from="1758392728976" duration="7015000" />
+      <workItem from="1758437737268" duration="3109000" />
+      <workItem from="1758696201569" duration="196000" />
     </task>
     <servers />
   </component>
