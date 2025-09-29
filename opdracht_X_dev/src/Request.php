@@ -28,7 +28,7 @@ class Request
             }
             foreach ($ruleSet as $rule) {
                 if (!$this->validateRule($key, $rule)) {
-                    $this->errors[$key] = $messages[$key][$rule] ?? $this->validation_msg;
+                    $this->errors[$key] = $messages[$key.'.'.(explode(':', $rule)[0]??'')] ?? $this->validation_msg;
                 }
             }
         }
@@ -43,6 +43,10 @@ class Request
             }
             redirect($_SERVER['HTTP_REFERER']);
         }
+    }
+    public function setError(string $veld, string $error): void
+    {
+        $this->errors[$veld] = $error;
     }
 
     public function append($key, $value): void
@@ -94,7 +98,10 @@ class Request
     private function integer(mixed $data, string $option = ''): bool
     {
         $this->validation_msg = 'Dit veld moet een getal zijn';
-        return is_int($data);
+        if(!is_numeric($data)){
+            return false;
+        }
+        return is_int($data+0);
     }
 
     private function length(string $data, string $option = ''): bool

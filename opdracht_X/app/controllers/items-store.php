@@ -20,5 +20,5 @@ flash("Item " . $request->naam . " is toegevoegd");
 redirect("/items");
 
 //terugsturen naar de detail pagina van het item
-//redirect("/items/" . $db->lastInsertId());
+//redirect("/items-show/" . $db->lastInsertId());
 

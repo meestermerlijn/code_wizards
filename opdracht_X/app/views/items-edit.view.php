@@ -4,9 +4,8 @@ view("parts/navigatie-menu");
 ?>
     <h1 class="text-3xl my-4">Item <?= $item['naam'] ?> wijzigen</h1>
 
-    <form action="/items/<?= $item['id'] ?>" method="post">
+    <form action="/items-update/<?= $item['id'] ?>" method="post">
         <?= csrf(); ?>
-        <?= method_put() ?>
         <label for="naam">Naam</label><br>
         <input type="text" name="naam" id="naam" placeholder="naam" value="<?= old('naam', $item['naam']) ?>">
         <?php if (errors('naam')): ?>

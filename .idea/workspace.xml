@@ -5,9 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ede9074e-ddc9-47c7-bf48-e7ffd88c4e08" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/framework/src/csp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_N/app/controllers/api/users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_N/app/router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_N/app/views/parts/header.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_N/app/views/users.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_O/webroot/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_P/app/controllers/profielfoto-store.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_P/app/router.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_P/app/views/profielfoto-create.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/api/users.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/profielfoto-create.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/users.view.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/src/csp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_X_dev/webroot/images/da5dabf005588c3e819dce5078f619f04cf518a0cfef9abd4a0c61d60dc3abb2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/proeftoets_db_agenda.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/framework/app/views/parts/navigatie-menu.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/app/views/parts/navigatie-menu.view.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/framework/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/framework/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/controllers/items-update.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/controllers/items-update.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/views/items-create.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/views/items-create.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X/app/views/items-edit.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X/app/views/items-edit.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-create.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-destroy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-store.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/items-update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-destroy.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-edit.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-store.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts-update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/posts.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/profielfoto-store.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/controllers/profielfoto-store.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/models/Item.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/models/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/router.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/about.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/about.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/home.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/home.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/items-create.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/items-edit.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/items-index.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/items-show.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/login.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/login.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/parts/header.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/parts/header.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/parts/navigatie-menu.view.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/app/views/parts/navigatie-menu.view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-create.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-edit.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts-show.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/posts.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/app/views/profielfoto.view.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/Request.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/src/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/webroot/cheatSheet.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/webroot/cheatSheet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_X_dev/webroot/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_X_dev/webroot/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/opdracht_Z_proeftoets/app/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tmp.php" beforeDir="false" afterPath="$PROJECT_DIR$/tmp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +78,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="PHP File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,39 +110,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.laravel-idea.search-composer-json&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;K:/php_projects/code_wizards/framework/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.laravel-idea.search-composer-json": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "K:/php_projects/code_wizards/opdracht_P/app/controllers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\php_projects\code_wizards\opdracht_P\app\controllers" />
+      <recent name="K:\php_projects\code_wizards\opdracht_P" />
+      <recent name="K:\php_projects\code_wizards\opdracht_P\views" />
+      <recent name="K:\php_projects\code_wizards\framework\app\views\parts" />
       <recent name="K:\php_projects\code_wizards\framework\src" />
-      <recent name="K:\php_projects\code_wizards\opdracht_M\app\controllers" />
-      <recent name="K:\php_projects\code_wizards\opdracht_M\app\views" />
-      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\app\views" />
-      <recent name="K:\php_projects\code_wizards\opdracht_X_dev\app\controllers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\php_projects\code_wizards\opdracht_P\app" />
       <recent name="K:\php_projects\code_wizards\opdracht_M\app" />
       <recent name="K:\php_projects\code_wizards" />
     </key>
@@ -81,8 +151,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-b598e85cdad2-JavaScript-PS-252.25557.128" />
-        <option value="bundled-php-predefined-a98d8de5180a-ce40d0652d34-com.jetbrains.php.sharedIndexes-PS-252.25557.128" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-PS-252.26199.163" />
+        <option value="bundled-php-predefined-a98d8de5180a-f0a8ef430dfa-com.jetbrains.php.sharedIndexes-PS-252.26199.163" />
       </set>
     </attachedChunks>
   </component>
@@ -115,6 +185,8 @@
       <workItem from="1758392728976" duration="7015000" />
       <workItem from="1758437737268" duration="3109000" />
       <workItem from="1758696201569" duration="196000" />
+      <workItem from="1758696474562" duration="75000" />
+      <workItem from="1759148291950" duration="11921000" />
     </task>
     <servers />
   </component>

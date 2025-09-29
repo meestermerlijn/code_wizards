@@ -3,6 +3,9 @@
 session_start();
 $config = require __DIR__ . "/../app/config.php";
 
+//request class
+require __DIR__ . "/../src/Request.php";
+
 //handige functies
 require __DIR__ . "/../src/functions.php";
 
@@ -48,17 +51,17 @@ $namen = ["Maurice", "John", "Ben"];
 echo $namen[0];
 
 //key value array aanmaken
-$namen = [
+$docent = [
     "voornaam" => "Maurice",
     "achternaam" => "Merlier",
     "leeftijd" => 45
 ];
 
 //variabele uit array tonen (eerste element)
-echo $namen["voornaam"];
+echo $docent["voornaam"];
 
 //array met meerdere arrays
-$personen = [
+$docenten = [
     [
         "voornaam" => "Maurice",
         "achternaam" => "Merlier",
@@ -72,18 +75,18 @@ $personen = [
 ];
 
 //variabele uit array tonen (eerste element)
-echo $personen[0]["voornaam"];
+echo $docenten[0]["voornaam"];
 
 //loop door een array met foreach
-foreach ($personen as $persoon) {
-    echo $persoon["voornaam"] . "<br>";
+foreach ($docenten as $docent) {
+    echo $docent["voornaam"] . "<br>";
 }
 
 //loop door een array binnen html
 ?>
     <ul>
-        <?php foreach ($personen as $persoon): ?>
-            <li><?= $persoon["voornaam"] ?></li>
+        <?php foreach ($docenten as $docent): ?>
+            <li><?= $docent["voornaam"] ?></li>
         <?php endforeach; ?>
     </ul>
 <?php
@@ -164,6 +167,8 @@ switch ($leeftijd) {
 ////////////////////////////////////////
 /// Database gebruiken //////////// ////
 ////////////////////////////////////////
+// 1 resultaat ->fetch()
+// meerdere resultaten ->fetchAll()
 
 //database object initialiseren
 $db = new Database();
@@ -240,7 +245,7 @@ flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
         Formulier maken (voorbeeld
          action: de url waar het formulier naartoe moet
          method: de methode die gebruikt moet worden (get of post)
-         csrf: de csrf token (voor veiligheid)
+         csrf: de csrf token (voor veiligheid bij een post formulier)
          name: de naam van het veld (wordt gebruikt om de waarde op te halen)
          value: de waarde van het veld
          placeholder: de tekst die in het veld wordt getoond
@@ -291,7 +296,6 @@ flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
         <option value=""></option>
         <option value="NL" selected>Nederland</option>
         <option value="BE">België</option>
-        ...
     </select>
 
     <!-- checkbox -->
@@ -314,8 +318,8 @@ flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
     </button>
 
     <!-- validatie bij een form field -->
-<?php if (isset($errors['veldnaam'])): ?>
-    <p class="text-red-500 text-sm my-2"><?= $errors['veldnaam'] ?></p>
+<?php if (errors('veldnaam')): ?>
+    <p class="text-red-500 text-sm my-2"><?= errors('veldnaam') ?></p>
 <?php endif; ?>
 <?php
 ////////////////////////////////////////
@@ -372,6 +376,21 @@ copy("bestand.txt", "nieuwbestand.txt");
 //bestand uploaden
 move_uploaded_file($_FILES['bestand']['tmp_name'], "bestand.txt");
 
+
+///////////////////////////////////////
+/// Views /////////////////////////////
+///////////////////////////////////////
+
+//view laden
+view('posts', [
+    'posts' => $db->query("SELECT * FROM posts ORDER BY id DESC")->fetchAll(),
+]);
+
+//view laden met onveilige variabelen (niet aanbevolen)
+view('home', [], [
+    'onveilig_script' => '<script>alert("hacked")</script>',
+]);
+
 ////////////////////////////////////////
 /// Classes ////////////////////////////
 ////////////////////////////////////////
@@ -399,10 +418,10 @@ class Persoon
     }
 }
 
-//class gebruiken
+//class gebruiken (object aanmaken)
 $persoon = new Persoon("Maurice", "Merlier", 45);
 
-//functie aanroepen
+//functie/methode aanroepen
 echo $persoon->getFullName();
 
 ////////////////////////////////////////
@@ -418,38 +437,106 @@ echo $persoon->getFullName();
 ///////////////////////////////////////////
 /// Validators /////////////////////////////
 /// ////////////////////////////////////////
-///
-Validator::required($var);         // $var is niet leeg
-Validator::integer($var);          // $var is een geheel getal
-Validator::length($var, $min, $max); // $var heeft een string lengte tussen $min en $max (inclusief)
-Validator::email($var);            // $var is een geldig email adres
-Validator::url($var);              // $var is een geldige url
-Validator::date($var);             // $var is een geldige datum
-Validator::min($var, $min);         // $var is hoger of gelijk aan $min
-Validator::max($var, $max);         // $var is lager of gelijk aan $max
-Validator::between($var, $min, $max); // $var zit tussen $min en $max (inclusief)
-Validator::in($var, $array);       // $var komt voor in de array $array
-Validator::notIn($var, $array);     // $var komt niet voor in de array $array
-Validator::regex($var, $regex);     // $var voldoet aan de gegeven regex expressie
+/// Validatie vindt plaats in de controller
+$request->validate([
+    'naam' => 'required|length:3,50',
+    'email' => 'required|email',
+    'leeftijd' => 'required|integer|between:18,100',
+]);
+//beschikbare validators
+// required, integer, length, email, url, date, min, max, between, in, notIn, numeric, date_format, date_before, date_after, date_between, regex, image
+$request->validate(['naam' => 'required']);
+$request->validate(['leeftijd' => 'integer']);
+$request->validate(['naam' => 'length:3,50']);
+$request->validate(['email' => 'email']);
+$request->validate(['website' => 'url']);
+$request->validate(['geboortedatum' => 'date']);
+$request->validate(['leeftijd' => 'min:18']);
+$request->validate(['leeftijd' => 'max:100']);
+$request->validate(['leeftijd' => 'between:18,100']);
+$request->validate(['rol' => 'in:admin,editor,user']);
+$request->validate(['rol' => 'notIn:guest,banned']);
+$request->validate(['prijs' => 'numeric']);
+$request->validate(['geboortedatum' => 'date_format:Y-m-d']);
+$request->validate(['geboortedatum' => 'date_before:2024-01-01']);
+$request->validate(['geboortedatum' => 'date_after:1900-01-01']);
+$request->validate(['geboortedatum' => 'date_between:1900-01-01,2024-01-01']);
+$request->validate(['username' => 'regex:/^[a-zA-Z0-9_]{3,20}$/']);
+$request->validate(['foto' => 'image']);
 
-//voorbeeld van het gebruik van validators
-require "../src/Validator.php";
-$errors = [];
-if (!Validator::required($_POST['naam'])) {
-    $errors['naam'] = "Naam is verplicht";
-}
+//met handmatige foutmelding
+$request->validate([
+    'naam' => 'required|length:3,50',
+], [
+    'naam.required' => 'Het naam veld is verplicht',
+    'naam.length' => 'Het naam veld moet tussen de 3 en 50 karakters zijn',
+]);
 
-/*  SQL query voorbeelden
--- Voorbeeld van een query met AND en OR
+//handmatig een error toevoegen
+$request->setError('naam',"Naam is verplicht");
+
+/*  SQL-query voorbeelden
+- Voorbeeld van een query met AND en OR
 SELECT *
 FROM leerlingen
 WHERE plaats = 'utrecht'
 AND (achternaam LIKE '%p%'
 OR voornaam LIKE '%p%');
 
--- Voorbeeld van een query met meerdere tabellen
+- Voorbeeld van een query met meerdere tabellen
 SELECT *
 FROM auteurs, boeken
 WHERE auteurs.auteurnr = boeken.auteurnr
 AND boeken.titel = 'Au pair!';
 */
+////////////////////////////////////////
+/// Gebruik van Model //////////////////
+////////////////////////////////////////
+///
+// Model toevoegen aan index.php
+require __DIR__ . "/../src/Model.php";
+require __DIR__ . "/../app/models/User.php";
+
+//query op users tabel
+$users = (new User)
+    ->where('voornaam', 'LIKE', '%p%') //voornaam LIKE '%p%'
+    ->where('role', 'user') // role = 'user'
+    ->whereNull('tussenvoegsel') // tussenvoegsel IS NULL
+    ->get(); //uitvoeren van de query
+
+//beperkt aantal resultaten ophalen
+$users = (new User)
+    ->limit(3)
+    ->get();
+
+//Alle users ophalen
+$users = (new User)->all();
+
+//user met id 2 ophalen
+$user = (new User)->find(2);
+
+//voornaam van de gebruiker op het scherm schrijven
+echo $user->voornaam;
+
+//user aanmaken
+$user = (new User())->create([
+    'name' => 'Piet Puck',
+    'email' => 'testttw@mail.nl',
+    'password' => password_hash('password', PASSWORD_BCRYPT),
+    'role' => 'user'
+]);
+
+//gegevens van user 2 aanpassen
+$user = (new User)->find(2);
+//naam wijzigen
+$user->name = 'John Doe';
+//opslaan in database (alleen als er werkelijk iets gewijzigd is)
+$user->save();
+
+//user verwijderen
+$user = (new User)->find(6);
+//de zojuist opgehaalde user verwijderen uit de database
+$user->delete();
+
+//uitgevoerde queries bekijken
+$user->dumpQueryLog();

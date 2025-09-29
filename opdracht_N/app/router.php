@@ -14,8 +14,8 @@ $route->get('logout', "controllers/logout.php");
 
 //Alleen als je ingelogd bent
 if (auth()) {
-    $route->get('profielfoto-create', 'views/profielfoto-create.view.php');
-    $route->post('profielfoto-store','controllers/profielfoto-store.php');
+    //hier komen routes die je alleen kan bereiken als je ingelogd bent
+    //$route->get('profile','controllers/profile.php');
 }
 
 

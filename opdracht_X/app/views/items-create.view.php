@@ -4,7 +4,7 @@ view("parts/navigatie-menu");
 ?>
     <h1 class="text-3xl my-4">Item toevoegen</h1>
 
-    <form action="/items" method="post">
+    <form action="/items-store" method="post">
         <?= csrf(); ?>
         <label for="naam">Naam</label><br>
         <input type="text" name="naam" id="naam" placeholder="naam" value="<?= old('naam') ?>"><br>

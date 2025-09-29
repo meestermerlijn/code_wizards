@@ -170,3 +170,12 @@ function request(): Request
     }
     return $request;
 }
+
+function getNonce(): string
+{
+    if (!isset($_SESSION['nonce'])) {
+        $bytes = random_bytes(20);
+        $_SESSION['nonce'] = bin2hex($bytes);
+    }
+    return $_SESSION['nonce'];
+}

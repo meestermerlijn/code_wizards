@@ -22,8 +22,7 @@ if (auth()) {
 //alleen toegankelijk als administrator
 if (hasRole('admin')) {
     //hier komen de routes die alleen toegankelijk zijn voor een admin
-    $route->get('api/users', "controllers/api/users.php");
-    $route->get('users', "views/users.view.php");
+
 }
 
 //pagina niet gevonden

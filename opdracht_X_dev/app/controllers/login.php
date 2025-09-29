@@ -5,10 +5,12 @@ $request->validate([
 ]);
 
 $db = new Database();
+
 //gebruiker ophalen uit de database
 $user = $db->query("SELECT * FROM users WHERE email = ? LIMIT 1", [
     $request->email
 ])->fetch();
+
 //als er een gebruiker is gevonden
 if ($user) {
     //wachtwoord controleren
@@ -28,4 +30,5 @@ if ($user) {
     $_SESSION['errors']['login'] = "Inloggegevens zijn niet correct";
 }
 
+// inloggen is niet gelukt, terug naar login pagina
 view("login");

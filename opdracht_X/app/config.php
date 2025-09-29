@@ -7,7 +7,7 @@ return [
     ],
     'database' => [
         'user' => 'root',
-        'password' => 'secret',
+        'password' => 'usbw',
         'port' => 3306,
         'host' => 'localhost',
         'dbname' => 'code_wizards',

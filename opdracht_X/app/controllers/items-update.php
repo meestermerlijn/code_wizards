@@ -16,4 +16,4 @@ $db->query("UPDATE items SET naam = :naam, beschrijving = :beschrijving, prijs =
 
 flash("Item " . $request->naam . " is gewijzigd");
 //terugsturen naar de detail pagina van het item
-redirect("/items/" . $request->id);
+redirect("/items-show/" . $request->id);

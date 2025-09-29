@@ -14,7 +14,11 @@
                     <div class="relative flex items-center space-x-1 cursor-pointer text-gray-700 hover:bg-pink-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                         <!-- Items waarop je kan klikken om uit te klappen -->
                         <div class="flex items-center">
-                            <span><?= user()->name ?></span>
+                            <?php if (user()->profielfoto): ?>
+                                <img src="/<?= user()->profielfoto ?>" alt="profielfoto" class="h-8 w-8 rounded-full object-cover mr-2">
+                            <?php else: ?>
+                                <span><?= user()->name ?></span>
+                            <?php endif; ?>
                             <svg xmlns="http://www.w3.org/2000/svg" class="pl-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
