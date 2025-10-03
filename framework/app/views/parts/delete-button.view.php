@@ -29,7 +29,6 @@
                 </button>
                 <form action="<?= $action ?? '' ?>" method="post">
                     <?= csrf(); ?>
-                    <?= method_delete(); ?>
                     <button for="show"
                             type="submit"
                             @click="modelConfirm = false" class="mr-2 px-2 py-2 text-sm tracking-wide text-white capitalize transition-colors duration-200 transform bg-red-500 hover:bg-red-600 rounded-md shadow-md cursor-pointer">
