@@ -20,4 +20,4 @@ $db->query("UPDATE posts SET title = :title, content = :content WHERE id = :id",
 flash('Post succesvol gewijzigd');
 
 //redirect naar posts
-redirect('posts');
+redirect('/posts');
