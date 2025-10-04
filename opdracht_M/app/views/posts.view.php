@@ -11,7 +11,7 @@ view("parts/navigatie-menu");
         <?php foreach ($posts as $post): ?>
             <div class="border border-1 rounded p-4 bg-gray-50 my-2">
                 <h2 class="font-bold"><?= $post['title']; ?></h2>
-                <?= $post['content'] ?>
+                <?= substr($post['content'],0,25) ?><a href="/posts-show/<?= $post['id'] ?>" class="text-indigo-500">...lees meer</a>
 
                 <div class="flex justify-between mt-4">
                     <form method="get" action="/posts-edit/<?= $post['id'] ?>">

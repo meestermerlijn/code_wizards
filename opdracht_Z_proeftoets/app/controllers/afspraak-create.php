@@ -1,11 +1,9 @@
 <?php
 
-//gegevens uit database ophalen
+//gegevens uit database ophalen (1pt)
 $db = new Database();
+$klanten = $db->query("SELECT * FROM klanten")->fetchAll();
 
-$users = $db->query("SELECT * FROM users ORDER BY name")->fetchAll();
-
-//aan de view de gegevens doorgeven
-view('admin-users',[
-    'users' => $users
+view('afspraak-create', [
+    'klanten' => $klanten //gegevens aan view meegeven (1pt)
 ]);

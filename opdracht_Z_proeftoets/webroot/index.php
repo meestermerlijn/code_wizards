@@ -3,6 +3,9 @@ session_start();
 //inladen van de configuratie parameters
 $config = require __DIR__ . "/../app/config.php";
 
+//request class
+require __DIR__ . "/../src/Request.php";
+
 //handige functies
 require __DIR__ . "/../src/functions.php";
 
@@ -12,9 +15,6 @@ require __DIR__ . "/../src/Database.php";
 //Model classes
 require __DIR__ . "/../src/Model.php";
 require __DIR__ . "/../app/models/User.php";
-
-//request class
-require __DIR__ . "/../src/Request.php";
 
 //Database class
 require __DIR__ . "/../src/Route.php";

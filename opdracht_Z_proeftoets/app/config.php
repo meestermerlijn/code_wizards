@@ -2,15 +2,15 @@
 return [
     'app' => [
         'env' => 'development',
-        'name' => 'Agenda',                 //aangepast
-        'email' => 'info@magenda-mail.nl',  //aangepast
+        'name' => 'Agenda',               //Naam van de applicatie aangepast (1p samen met email)
+        'email' => 'info@agenda-mail.nl', //Email van de applicatie aangepast
     ],
     'database' => [
         'user' => 'root',
-        'password' => 'usbw',               //aangepast
+        'password' => 'secret',              //Wachtwoord aangepast (1p)
         'port' => 3306,
         'host' => 'localhost',
-        'dbname' => 'agenda',               //aangepast
+        'dbname' => 'agenda',              //Database naam aangepast (1p)
         'charset' => 'utf8mb4',
     ],
 ];

@@ -10,7 +10,7 @@ $route->get('login', "views/login.view.php");
 $route->post('login', "controllers/login.php");
 $route->get('logout', "controllers/logout.php");
 
-
+$route->get('posts', "controllers/posts.php");
 
 //Alleen als je ingelogd bent
 if (auth()) {
