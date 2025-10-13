@@ -4,6 +4,9 @@ view("parts/navigatie-menu");
 ?>
     <div class="sm:mx-10">
         <h1 class="text-3xl my-4">Posts</h1>
+        <!-- Link naar create post van opgave J3.4 -->
+        <a href="/posts-create" class="text-indigo-600 hover:text-indigo-400">Nieuwe post</a><br>
+
         <form action="/posts" method="get">
             <input type="text" id="search" name="q" class="border-1 border-gray-800 rounded-md px-2 py-1" placeholder="Titel...">
             <input type="submit" value="Zoek" class="border-1 border-gray-800 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
