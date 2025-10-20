@@ -291,7 +291,7 @@ flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
     <option value="UK">Engeland</option>
 </select>
 
-<!-- met een voorgeselecteerde option -->
+<!-- met een voorgeselecteerde option (NL) -->
 <select name="contry">
     <option value=""></option>
     <option value="NL" selected>Nederland</option>
@@ -301,20 +301,28 @@ flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
 <!-- checkbox -->
 <input type="checkbox" name="terms" value="1">
 
+<!-- met checkbox aangevinkt -->
+<input type="checkbox" name="terms" value="1" checked>
+
 <!-- radiobuttons -->
-<input type="radio" name="sex" value="M">Man<br>
-<input type="radio" name="sex" value="V">Vrouw<br>
-<input type="radio" name="sex" value="X">Anders<br>
+<input type="radio" name="geslacht" value="M">Man<br>
+<input type="radio" name="geslacht" value="V">Vrouw<br>
+<input type="radio" name="geslacht" value="X">Anders<br>
+
+<!-- met radiobutton geselecteerd (M)-->
+<input type="radio" name="geslacht" value="M" checked>Man<br>
+<input type="radio" name="geslacht" value="V">Vrouw<br>
+<input type="radio" name="geslacht" value="X">Anders<br>
 
 <!-- hidden field -->
 <input type="hidden" name="id" value="1">
 
 <!-- submit button -->
 <input type="submit" value="Opslaan" name="save"
-    class="border border-1 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
+    class="border rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
 
 <!-- of button -->
-<button type="submit" name="save" class="border border-1 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
+<button type="submit" name="save" class="border rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
     Opslaan
 </button>
 
@@ -323,8 +331,17 @@ flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
     <p class="text-red-500 text-sm my-2"><?= errors('veldnaam') ?></p>
 <?php endif; ?>
 
+    <!-- of dmv van view -->
+<?php view('forms.validation-msg', ['field' => 'veldnaam']); ?>
+
+
+
 <!-- herinvullen van veld, bij validatie errors-->
 <input type="text" class="border" name="titel" value="<?= old('titel') ?>" placeholder="Titel">
+
+<!-- herinvullen van textarea, bij validatie errors-->
+<textarea name="content" class="border" placeholder="Content"><?= old('content') ?></textarea>
+
 <?php
 ////////////////////////////////////////
 /////////////// Sessions ///////////////

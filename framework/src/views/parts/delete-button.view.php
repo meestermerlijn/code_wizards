@@ -1,3 +1,15 @@
+<?php
+// Delete Button view component
+/*
+//Usage:
+view('parts.delete-button', [
+    'action' => route('items-destroy', ['id' => $item->id]),
+    'titel' => 'Bevestig Verwijdering',
+    'content' => 'Weet je zeker dat je dit item wilt verwijderen? Deze actie kan niet ongedaan worden gemaakt.',
+    'class' => ''
+]);
+*/
+?>
 <div x-data="{ modelConfirm: false }" class="<?= $class ?? '' ?>">
     <button @click="modelConfirm =!modelConfirm" class="cursor-pointer flex justify-center text-white text-md bg-red-500 hover:bg-red-600 focus:ring-4 focus:outline-none shadow-md focus:ring-gray-100 font-medium rounded-lg text-sm px-3 py-2 text-center inline-flex items-center ">
         <span> Verwijder </span>
