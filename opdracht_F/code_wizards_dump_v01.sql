@@ -110,6 +110,7 @@ CREATE TABLE IF NOT EXISTS `users`
     `password`   varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
     `name`       varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
     `role`       varchar(25) COLLATE utf8mb4_general_ci           DEFAULT NULL,
+    `profielfoto` varchar(255) COLLATE utf8mb4_general_ci           DEFAULT NULL,
     `created_at` timestamp                               NOT NULL DEFAULT CURRENT_TIMESTAMP,
     `updated_at` timestamp                                        DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     `deleted_at` timestamp                               NULL     DEFAULT NULL,

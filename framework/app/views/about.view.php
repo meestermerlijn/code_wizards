@@ -12,6 +12,5 @@ view("parts/navigatie-menu");
         <p>Uitleg over de werking van het framework is te vinden op de <a href="https://maken.wikiwijs.nl/209164/V6_p1_2_PHP_MySQL_webapplicatie_vanaf_null_v2">wiki pagina</a></p>
     </div>
 
-
 <?php
 view("parts/footer");

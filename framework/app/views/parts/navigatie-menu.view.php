@@ -14,7 +14,7 @@
                     <div class="relative flex items-center space-x-1 cursor-pointer text-gray-700 hover:bg-pink-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                         <!-- Items waarop je kan klikken om uit te klappen -->
                         <div class="flex items-center">
-                            <?php if (user()->profielfoto): ?>
+                            <?php if (user()->profielfoto??false): ?>
                                 <img src="/<?= user()->profielfoto ?>" alt="profielfoto" class="h-8 w-8 rounded-full object-cover mr-2">
                             <?php else: ?>
                                 <span><?= user()->name ?></span>

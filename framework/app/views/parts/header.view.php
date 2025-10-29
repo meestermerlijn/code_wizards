@@ -10,4 +10,4 @@
     <script src="/scripts/axios.min.js"></script>
     <link rel="stylesheet" href="/styles/default.css">
 </head>
-<body>
+<body class="dark:bg-gray-900 dark:text-gray-200">

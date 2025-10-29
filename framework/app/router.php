@@ -11,7 +11,6 @@ $route->post('login', "controllers/login.php");
 $route->get('logout', "controllers/logout.php");
 
 
-
 //Alleen als je ingelogd bent
 if (auth()) {
     //hier komen routes die je alleen kan bereiken als je ingelogd bent
@@ -26,4 +25,4 @@ if (hasRole('admin')) {
 }
 
 //pagina niet gevonden
-abort(404);
+abort(404,'Route niet gevonden');

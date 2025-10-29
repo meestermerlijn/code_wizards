@@ -10,7 +10,7 @@ return [
         'password' => 'secret',
         'port' => 3306,
         'host' => 'localhost',
-        'dbname' => 'code_wizards',
+        'name' => 'code_wizards',
         'charset' => 'utf8mb4',
     ],
 ];

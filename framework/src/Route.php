@@ -68,14 +68,16 @@ class Route
             $this->checkUri() and
             $this->spoof) {
             $request = new Request();
+
             if (file_exists($_SERVER['DOCUMENT_ROOT'] . "/../app/" . $this->to)) {
                 require $_SERVER['DOCUMENT_ROOT'] . "/../app/" . $this->to;
             } else {
                 //pagina bestaat niet
                 http_response_code(404);
-                require file_exists(__DIR__ . '/../app/views/404.view.php') ?
-                    __DIR__ . '/../app/views/404.view.php' :
-                    __DIR__ . '/../src/views/404.view.php';
+                view('status/404', [
+                    '_route' => '$route->'.strtolower($this->method)."('".htmlspecialchars($this->uri)."','".$this->to."');",
+                    '_file' => "/app/" . $this->to,
+                ]);
             }
             $request->end();
         }
