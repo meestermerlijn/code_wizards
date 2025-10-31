@@ -38,6 +38,5 @@ view("parts/navigatie-menu");
             </form>
         </div>
     </div>
-<option value="1" selected>Piet</option>
 <?php
 view("parts/footer");
