@@ -23,8 +23,3 @@ flash('De post ' . $request->title . ' is succesvol toegevoegd');
 
 // doorsturen naar posts pagina (de post is ingevoerd dus gebruiker doorsturen naar andere pagina_
 redirect("/posts");
-
-if (auth()) { //alleen als je ingelogd bent kan je dit doen
-    $route->get('api/users-search', "controllers/api/users-search.php");
-    $route->get('users', "views/users-search.view.php");
-}
