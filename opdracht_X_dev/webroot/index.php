@@ -9,7 +9,6 @@ require __DIR__ . "/../src/Request.php";
 //handige functies
 require __DIR__ . "/../src/functions.php";
 
-
 //Database class
 require __DIR__ . "/../src/Database.php";
 

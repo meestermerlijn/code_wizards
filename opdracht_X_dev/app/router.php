@@ -5,26 +5,32 @@ $route = new Route();
 $route->get('', "controllers/home.php");
 $route->get('index', "controllers/home.php");
 $route->get('about', "views/about.view.php");
+$route->get('contact', "controllers/contact.php");
+$route->get('home', "controllers/home.php");
+
+$route->get('posts', "controllers/posts.php");
+
+$route->get('items-create', "views/items-create.view.php");
+$route->post('items-store', "controllers/items-store.php");
+
 
 $route->get('login', "views/login.view.php");
 $route->post('login', "controllers/login.php");
 $route->get('logout', "controllers/logout.php");
 
-$route->get('posts', "controllers/posts.php");
 
 //Alleen als je ingelogd bent
 if (auth()) {
-    $route->get('profielfoto-create', 'views/profielfoto-create.view.php');
-    $route->post('profielfoto-store','controllers/profielfoto-store.php');
+    //hier komen routes die je alleen kan bereiken als je ingelogd bent
+    //$route->get('profile','controllers/profile.php');
 }
 
 
 //alleen toegankelijk als administrator
 if (hasRole('admin')) {
     //hier komen de routes die alleen toegankelijk zijn voor een admin
-    $route->get('api/users', "controllers/api/users.php");
-    $route->get('users', "views/users.view.php");
+
 }
 
 //pagina niet gevonden
-abort(404);
+abort(404,'Route niet gevonden');

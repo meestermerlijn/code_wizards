@@ -10,7 +10,7 @@ class Database
     {
         $dns = "mysql:host=" . config('database.host') . ";" .
             "port=" . config('database.port') . ";" .
-            "dbname=" . config('database.dbname') . ";" .
+            "dbname=" . config('database.name') . ";" .
             "charset=" . config('database.charset');
 
         try { //probeer een verbinding te maken
@@ -52,11 +52,7 @@ class Database
     private function showException($exception)
     {
         //Alleen in productie
-        if (config('app.env') != 'production') {
-            dd($exception->getMessage());
-        } else {
-            echo "Er is een fout opgetreden, ga <a href='/'>terug</a> naar de website";
-            die();
-        }
+        abort(500, $exception->getMessage());
+        die();
     }
 }

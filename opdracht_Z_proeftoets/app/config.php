@@ -10,7 +10,7 @@ return [
         'password' => 'secret',              //Wachtwoord aangepast (1p)
         'port' => 3306,
         'host' => 'localhost',
-        'dbname' => 'agenda',              //Database naam aangepast (1p)
+        'name' => 'agenda',              //Database naam aangepast (1p)
         'charset' => 'utf8mb4',
     ],
 ];

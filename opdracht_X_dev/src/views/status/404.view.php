@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Error</title>
+    <script src="/scripts/tailwind.min.js"></script>
+</head>
+<body>
+<!-- hier de about pagina -->
+<div class="mx-auto max-w-7xl py-20 sm:px-6 lg:px:8">
+    <h1 class="text-2xl font-bold  mb-4">404 Pagina niet gevonden</h1>
+
+    <?php if (config('app.env') == 'development' and $_file??null): ?>
+        <div>
+            <p>Bestand niet gevonden: <?= $_file ?></p>
+            <p>Bij route <code><?= $_route ?? '' ?></code></p>
+        </div>
+    <?php elseif( $_error??null): ?>
+        <div>
+            <p><?= $_error ?></p>
+        </div>
+    <?php endif ?>
+    <p class="mt-2">
+        <a href="/" class="text-indigo-800 hover:text-indigo-600">Ga terug naar de pagina</a>
+    </p>
+</div>
+</body>
+</html>

@@ -39,9 +39,9 @@ echo "<h1>{$naam}</h1>";
 
 //variabele tonen met html (kortere versie)
 ?>
-    <div>
-        <h1><?= $naam ?></h1>
-    </div>
+<div>
+    <h1><?= $naam ?></h1>
+</div>
 <?php
 
 //array aanmaken
@@ -84,11 +84,11 @@ foreach ($docenten as $docent) {
 
 //loop door een array binnen html
 ?>
-    <ul>
-        <?php foreach ($docenten as $docent): ?>
-            <li><?= $docent["voornaam"] ?></li>
-        <?php endforeach; ?>
-    </ul>
+<ul>
+    <?php foreach ($docenten as $docent): ?>
+        <li><?= $docent["voornaam"] ?></li>
+    <?php endforeach; ?>
+</ul>
 <?php
 
 /////////////////////////////////////////////////
@@ -143,13 +143,13 @@ if ($leeftijd > 18) {
 
 //gebruik van if else in html
 ?>
-    <div>
-        <?php if ($leeftijd > 18): ?>
-            <h1>Je bent ouder dan 18</h1>
-        <?php else: ?>
-            <h1>Je bent jonger dan 18</h1>
-        <?php endif; ?>
-    </div>
+<div>
+    <?php if ($leeftijd > 18): ?>
+        <h1>Je bent ouder dan 18</h1>
+    <?php else: ?>
+        <h1>Je bent jonger dan 18</h1>
+    <?php endif; ?>
+</div>
 <?php
 //gebruik van switch
 $leeftijd = 45;
@@ -236,7 +236,7 @@ $db->query("DELETE FROM posts WHERE id = :id", ['id' => 1]);
 flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
 
 ?>
-    <!--
+<!--
         ////////////////////////////////////////
         /////////////// Formulieren ////////////
         ////////////////////////////////////////
@@ -251,76 +251,97 @@ flash("Post is opgeslagen", true, 3000); //true = succes, 3000 = 3 seconden
          placeholder: de tekst die in het veld wordt getoond
          required: het veld is verplicht
          type: het type veld (text, password, email, number, date, time, url, color, range, search, tel) -->
-    <form action="/posts" method="post">
-        <?= csrf() ?>
-        <input type="text" name="title" placeholder="Titel" required>
-        <textarea name="content" placeholder="Content"></textarea>
-        <input type="submit" value="Opslaan">
-    </form>
+<form action="/posts" method="post">
+    <?= csrf() ?>
+    <input type="text" name="title" placeholder="Titel" required>
+    <textarea name="content" placeholder="Content"></textarea>
+    <input type="submit" value="Opslaan">
+</form>
 
-    <!-- input fields -->
-    <!-- text -->
-    <input type="text" name="title" placeholder="Titel">
-    <!-- password -->
-    <input type="password" name="password" placeholder="Wachtwoord">
-    <!-- email -->
-    <input type="email" name="email" placeholder="E-mailadres">
-    <!-- number -->
-    <input type="number" name="age" placeholder="Leeftijd">
-    <!-- date -->
-    <input type="date" name="date" placeholder="Datum">
-    <!-- time -->
-    <input type="time" name="time" placeholder="Tijd">
-    <!-- url -->
-    <input type="url" name="url" placeholder="URL">
-    <!-- color -->
-    <input type="color" name="color" placeholder="Kleur">
-    <!-- range -->
-    <input type="range" name="range" placeholder="Range">
+<!-- input fields -->
+<!-- text -->
+<input type="text" name="title" placeholder="Titel">
+<!-- password -->
+<input type="password" name="password" placeholder="Wachtwoord">
+<!-- email -->
+<input type="email" name="email" placeholder="E-mailadres">
+<!-- number -->
+<input type="number" name="age" placeholder="Leeftijd">
+<!-- date -->
+<input type="date" name="date" placeholder="Datum">
+<!-- time -->
+<input type="time" name="time" placeholder="Tijd">
+<!-- url -->
+<input type="url" name="url" placeholder="URL">
+<!-- color -->
+<input type="color" name="color" placeholder="Kleur">
+<!-- range -->
+<input type="range" name="range" placeholder="Range">
 
-    <!-- textarea -->
-    <textarea name="content" placeholder="Content..."></textarea>
+<!-- textarea -->
+<textarea name="content" placeholder="Content..."></textarea>
 
-    <!-- selectbox -->
-    <select name="contry">
-        <option value=""></option>
-        <option value="NL">Nederland</option>
-        <option value="BE">België</option>
-        <option value="DE">Duitsland</option>
-        <option value="FR">Frankrijk</option>
-        <option value="UK">Engeland</option>
-    </select>
+<!-- selectbox -->
+<select name="contry">
+    <option value=""></option>
+    <option value="NL">Nederland</option>
+    <option value="BE">België</option>
+    <option value="DE">Duitsland</option>
+    <option value="FR">Frankrijk</option>
+    <option value="UK">Engeland</option>
+</select>
 
-    <!-- met een voorgeselecteerde option -->
-    <select name="contry">
-        <option value=""></option>
-        <option value="NL" selected>Nederland</option>
-        <option value="BE">België</option>
-    </select>
+<!-- met een voorgeselecteerde option (NL) -->
+<select name="contry">
+    <option value=""></option>
+    <option value="NL" selected>Nederland</option>
+    <option value="BE">België</option>
+</select>
 
-    <!-- checkbox -->
-    <input type="checkbox" name="terms" value="1">
+<!-- checkbox -->
+<input type="checkbox" name="terms" value="1">
 
-    <!-- radiobuttons -->
-    <input type="radio" name="sex" value="M">Man<br>
-    <input type="radio" name="sex" value="V">Vrouw<br>
-    <input type="radio" name="sex" value="X">Anders<br>
+<!-- met checkbox aangevinkt -->
+<input type="checkbox" name="terms" value="1" checked>
 
-    <!-- hidden field -->
-    <input type="hidden" name="id" value="1">
+<!-- radiobuttons -->
+<input type="radio" name="geslacht" value="M">Man<br>
+<input type="radio" name="geslacht" value="V">Vrouw<br>
+<input type="radio" name="geslacht" value="X">Anders<br>
 
-    <!-- submit button -->
-    <input type="submit" value="Opslaan" name="save" class="border border-1 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
+<!-- met radiobutton geselecteerd (M)-->
+<input type="radio" name="geslacht" value="M" checked>Man<br>
+<input type="radio" name="geslacht" value="V">Vrouw<br>
+<input type="radio" name="geslacht" value="X">Anders<br>
 
-    <!-- of button -->
-    <button type="submit" name="save" class="border border-1 rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
-        Opslaan
-    </button>
+<!-- hidden field -->
+<input type="hidden" name="id" value="1">
 
-    <!-- validatie bij een form field -->
+<!-- submit button -->
+<input type="submit" value="Opslaan" name="save"
+    class="border rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
+
+<!-- of button -->
+<button type="submit" name="save" class="border rounded-md px-2 py-1 hover:bg-gray-100 cursor-pointer">
+    Opslaan
+</button>
+
+<!-- validatie bij een form field -->
 <?php if (errors('veldnaam')): ?>
     <p class="text-red-500 text-sm my-2"><?= errors('veldnaam') ?></p>
 <?php endif; ?>
+
+    <!-- of dmv van view -->
+<?php view('forms.validation-msg', ['field' => 'veldnaam']); ?>
+
+
+
+<!-- herinvullen van veld, bij validatie errors-->
+<input type="text" class="border" name="titel" value="<?= old('titel') ?>" placeholder="Titel">
+
+<!-- herinvullen van textarea, bij validatie errors-->
+<textarea name="content" class="border" placeholder="Content"><?= old('content') ?></textarea>
+
 <?php
 ////////////////////////////////////////
 /////////////// Sessions ///////////////
@@ -391,6 +412,11 @@ view('home', [], [
     'onveilig_script' => '<script>alert("hacked")</script>',
 ]);
 
+//delete-button view
+view('parts/delete-button', [
+    'action' => "/posts-destroy/" . $post['id']
+]);
+
 ////////////////////////////////////////
 /// Classes ////////////////////////////
 ////////////////////////////////////////
@@ -430,8 +456,8 @@ echo $persoon->getFullName();
 
 /// gebruik van htmlspecialchars
 ?>
-    <h1><?= $naam ?></h1> (onveilig)
-    <h1><?= htmlspecialchars($naam) ?></h1> (veilig)
+<h1><?= $naam ?></h1> (onveilig)
+<h1><?= htmlspecialchars($naam) ?></h1> (veilig)
 
 <?php
 ///////////////////////////////////////////
@@ -473,7 +499,7 @@ $request->validate([
 ]);
 
 //handmatig een error toevoegen
-$request->setError('naam',"Naam is verplicht");
+$request->setError('naam', "Naam is verplicht");
 
 /*  SQL-query voorbeelden
 - Voorbeeld van een query met AND en OR

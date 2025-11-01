@@ -27,7 +27,11 @@ function config(string $param): string
         if (isset($result[$item])) {
             $result = $result[$item];
         } else {
-            return ''; //gezochte item bestaat niet
+            if(config('app.env') == 'development'){
+                dd("Config item '$param' niet gevonden.");
+            }else {
+                return ''; //gezochte item bestaat niet
+            }
         }
     }
     return $result;
@@ -52,7 +56,14 @@ function specialchars(mixed $var): object|array|string
 
 function view(string $file, array $vars = [], array $unescaped = []): void
 {
+    $file = str_replace(".", "/", $file);
+
     $vars = specialchars($vars);
+    foreach(['route'] as $reserved){
+        if(array_key_exists($reserved, $vars)){
+            dd("Variabele naam '$reserved' mag niet gebruikt worden in de aanroep van  view('".$file."',...) dit is een gereserveerde naam.");
+        }
+    }
     extract(array_merge($vars,$unescaped));
     if (file_exists(__DIR__ . "/../app/views/" . $file . ".view.php")) {
 
@@ -159,7 +170,7 @@ function errors(string $key): string
 function abort(int $code=404, string $msg="Pagina niet gevonden"): void
 {
     http_response_code($code);
-    view($code, ['error' => $msg]);
+    view("status/".$code, ['_error' => $msg]);
     die();
 }
 

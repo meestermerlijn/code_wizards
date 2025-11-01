@@ -1,5 +1,4 @@
 <?php
-
 //gegevens uit database ophalen (1pt)
 $db = new Database();
 $klanten = $db->query("SELECT * FROM klanten")->fetchAll();

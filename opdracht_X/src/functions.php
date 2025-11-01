@@ -27,28 +27,43 @@ function config(string $param): string
         if (isset($result[$item])) {
             $result = $result[$item];
         } else {
-            return ''; //gezochte item bestaat niet
+            if(config('app.env') == 'development'){
+                dd("Config item '$param' niet gevonden.");
+            }else {
+                return ''; //gezochte item bestaat niet
+            }
         }
     }
     return $result;
 }
-function specialchars(mixed $var): array|string
+function specialchars(mixed $var): object|array|string
 {
+    if($var instanceof Model) {
+        foreach ($var as $key => $value) {
+            $var->$key = specialchars($value??"");
+        }
+        return $var;
+    }
+
     if (is_array($var)) {
         foreach ($var as $key => $value) {
             $var[$key] = specialchars($value??"");
         }
         return $var;
     }
-    if(is_null($var)){
-        return '';
-    }
     return htmlspecialchars($var);
 }
 
 function view(string $file, array $vars = [], array $unescaped = []): void
 {
+    $file = str_replace(".", "/", $file);
+
     $vars = specialchars($vars);
+    foreach(['route'] as $reserved){
+        if(array_key_exists($reserved, $vars)){
+            dd("Variabele naam '$reserved' mag niet gebruikt worden in de aanroep van  view('".$file."',...) dit is een gereserveerde naam.");
+        }
+    }
     extract(array_merge($vars,$unescaped));
     if (file_exists(__DIR__ . "/../app/views/" . $file . ".view.php")) {
 
@@ -122,6 +137,22 @@ function user(): ?object
         : null;
 }
 
+// faken van PUT, DELETE, PATCH method bij het versturen van een formulier
+function method_put(): string
+{
+    return "<input type=\"hidden\" name=\"_method\" value=\"PUT\">";
+}
+
+function method_delete(): string
+{
+    return "<input type=\"hidden\" name=\"_method\" value=\"DELETE\">";
+}
+
+function method_patch(): string
+{
+    return "<input type=\"hidden\" name=\"_method\" value=\"PATCH\">";
+}
+
 //Doorsturen naar een andere pagina
 function redirect($url, $statusCode = 303)
 {
@@ -139,11 +170,18 @@ function errors(string $key): string
 function abort(int $code=404, string $msg="Pagina niet gevonden"): void
 {
     http_response_code($code);
-    view($code, ['error' => $msg]);
+    view("status/".$code, ['_error' => $msg]);
     die();
 }
 
-//wordt gebruikt voor Content Security Policy
+function request(): Request
+{
+    if(!isset($request)){
+        $request = new Request();
+    }
+    return $request;
+}
+
 function getNonce(): string
 {
     if (!isset($_SESSION['nonce'])) {

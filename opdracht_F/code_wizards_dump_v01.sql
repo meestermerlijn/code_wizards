@@ -124,8 +124,8 @@ CREATE TABLE IF NOT EXISTS `users`
 INSERT INTO `users` (`id`, `email`, `password`, `name`, `role`, `created_at`, `updated_at`, `deleted_at`)
 VALUES (31, 'dkorstman@sam.net', 'secret', 'ing. Pippa die Witte BA', NULL, '2023-09-07 07:23:02',
         '2023-09-07 07:23:02', NULL),
-       (61, 'suus.vanhaspengouw@hotmail.nl', '$2y$10$Iu/2Iftpnmq0yZmnMuZCJuejLk92l97EU8KgUSZSZqSOG3ymtuE4O',
-        'Britt Kallen', NULL, '2023-09-07 07:27:24', '2023-09-07 07:27:24', NULL),
+       (61, 'admin@psg.nl', '$2y$10$Iu/2Iftpnmq0yZmnMuZCJuejLk92l97EU8KgUSZSZqSOG3ymtuE4O',
+        'Britt Kallen', 'admin', '2023-09-07 07:27:24', '2023-09-07 07:27:24', NULL),
        (62, 'vandeberg.sophia@sambo.com', '$2y$10$mhg7mDVeRC8kK/N25Kzrk.g6Q2lvLkq4LVOouF6O.192BSqiS.bMm',
         'Marijn Gerritsen Bsc', NULL, '2023-09-07 07:27:24', '2023-09-07 07:27:24', NULL),
        (63, 'kort.stef@scholten.nl', '$2y$10$ITnBtU28G2EBN4YQ0YRy6.aOtQBbIrGezKAIE0fMRtLw9M1UIor0C',

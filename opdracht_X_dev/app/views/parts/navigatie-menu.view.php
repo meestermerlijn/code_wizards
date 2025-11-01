@@ -7,6 +7,15 @@
             </a>
             <a href="/" class="<?= isUri("") ? 'underline ' : '' ?>text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Home</a>
             <a href="/about" class="<?= isUri("about") ? 'underline ' : '' ?>text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">About</a>
+
+
+
+            <!-- Onderstaande regel moest jij toevoegen -->
+            <a href="/contact" class="<?= isUri("contact") ? 'underline ' : '' ?>text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md font-medium">Contact</a>
+            <!-- Tot hier moest jij toevoegen -->
+
+
+
         </div>
         <div class="justify-end">
             <?php if (auth()): ?>
@@ -14,11 +23,7 @@
                     <div class="relative flex items-center space-x-1 cursor-pointer text-gray-700 hover:bg-pink-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">
                         <!-- Items waarop je kan klikken om uit te klappen -->
                         <div class="flex items-center">
-                            <?php if (user()->profielfoto): ?>
-                                <img src="/<?= user()->profielfoto ?>" alt="profielfoto" class="h-8 w-8 rounded-full object-cover mr-2">
-                            <?php else: ?>
-                                <span><?= user()->name ?></span>
-                            <?php endif; ?>
+                            <span><?= user()->name ?></span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="pl-1 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                             </svg>
